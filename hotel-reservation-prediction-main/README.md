@@ -1,6 +1,6 @@
 # Hotel Reservation Cancellation Prediction - MLOps Project
 
-![MLOps Workflow](https://img.shields.io/badge/MLOps-Production%20Ready-green)
+
 
 A complete end-to-end MLOps project that predicts whether a hotel reservation will be canceled. This project involves everything from model training to automated CI/CD deployment on Google Cloud Run using Jenkins, Docker, and MLflow for tracking.
 
