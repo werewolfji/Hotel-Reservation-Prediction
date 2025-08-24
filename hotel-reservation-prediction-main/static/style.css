@@ -1,0 +1,142 @@
+/* General reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f7fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Container styling */
+.container {
+  background-color: #ffffff;
+  padding: 32px 40px;
+  border-radius: 10px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  width: 100%;
+  max-width: 640px;
+  transition: all 0.3s ease;
+}
+
+/* Heading styling */
+h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #2c3e50;
+  margin-bottom: 28px;
+  font-weight: 600;
+}
+
+/* Form group styling */
+.form-group {
+  margin-bottom: 20px;
+}
+
+/* Label styling */
+label {
+  font-size: 1rem;
+  color: #333;
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+/* Input and select field styling */
+input[type="number"],
+select {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: #fafafa;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="number"]:focus,
+select:focus {
+  border-color: #0077cc;
+  box-shadow: 0 0 6px rgba(0, 119, 204, 0.3);
+  background-color: #fff;
+  outline: none;
+}
+
+/* Button styling */
+button {
+  width: 100%;
+  padding: 14px;
+  background-color: #0077cc;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #005fa3;
+  transform: translateY(-1px);
+}
+
+/* Result section styling */ /* Result container */
+.result {
+  margin-top: 24px;
+  text-align: center;
+  font-size: 1.2rem;
+  padding: 16px;
+  border-radius: 8px;
+  font-weight: 600;
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+/* Green (NOT cancel) */
+.result.not-cancel {
+  background-color: #e6f4ea;
+  color: #2e7d32;
+  border: 1px solid #a5d6a7;
+}
+
+/* Red (Cancel) */
+.result.cancel {
+  background-color: #fdecea;
+  color: #c62828;
+  border: 1px solid #ef9a9a;
+}
+
+/* Fade in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .container {
+    padding: 24px;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+  }
+
+  button {
+    padding: 12px;
+  }
+}
